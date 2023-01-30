@@ -4,7 +4,7 @@ NEXT SESSION
 	[x] set widths/heights for each card to make this work? Maybe the clamp method? Or minmax?
 [x] style form and button
 [x] address how to get title to wrap if too long - used overflow auto instead - keep height of cards consistent this way
-[ ] import roboto font
+[x] import roboto font
 [ ] README file
 
 	
