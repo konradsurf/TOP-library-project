@@ -6,14 +6,39 @@
 }
 
 form {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr clamp(5em, 15em, 25em) 1fr;
+  padding: 15px; 
+  gap: 5px; 
+}
+
+form label {
+  justify-self: end;
+  padding-right: 1em;
+}
+
+form input {
+  justify-self: start;
+  width: 99%;
+  border-radius: 6px;
+}
+
+#read {
+  width: auto!important;
+}
+
+.required-tag {
+  justify-self: start;
 }
 
 #submitBtn {
+  background-color: darkseagreen;
   border-radius: 6px;
   border-color: azure;
+  color: azure;
   font-weight: bold;
+  grid-column: 2; 
+  padding: 5px; 
 }
 
 #required-reminder {

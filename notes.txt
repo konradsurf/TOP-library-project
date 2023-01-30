@@ -1,9 +1,11 @@
 NEXT SESSION
-[ ] create github repo and push it
-[ ] dynamic adjustment of column quantity
-	[ ] set widths/heights for each card to make this work? Maybe the clamp method? Or minmax?
-[ ] style form and button
-[ ] address how to get title to wrap if too long
+[x] create github repo and push it
+[x] dynamic adjustment of column quantity
+	[x] set widths/heights for each card to make this work? Maybe the clamp method? Or minmax?
+[x] style form and button
+[x] address how to get title to wrap if too long - used overflow auto instead - keep height of cards consistent this way
+[ ] import roboto font
+[ ] README file
 
 	
 

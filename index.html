@@ -10,25 +10,17 @@
   </head>
   <body>
     <form action="">
-      <label for="title"
-        >Book Title:
-        <input type="text" id="title" name="title" required/>
-        *
-      </label>
-      <label for="author"
-        >Author:
-        <input type="text" id="author" name="author" required/>
-        *
-      </label>
-      <label for="pages"
-        >Pages:
-        <input type="number" id="pages" name="pages" required/>
-        *
-      </label>
-      <label for="read"
-        >Check if read:
-        <input type="checkbox" id="read" name="read" />
-      </label>
+      <label for="title">Book Title:</label>
+      <input type="text" id="title" name="title" required/>
+      <p class="required-tag">*</p>
+      <label for="author">Author:</label>
+      <input type="text" id="author" name="author" required/>
+      <p class="required-tag">*</p>
+      <label for="pages">Pages:</label>
+      <input type="number" id="pages" name="pages" required/>
+      <p class="required-tag">*</p>
+      <label for="read">Check if read:</label>
+      <input type="checkbox" id="read" name="read"/>
       <p id="required-reminder">* indicates a required field</p>
       <button type="submit" id="submitBtn">Add Book</button>
     </form>
