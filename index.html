@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Library Project</title>
+    <script src="javascript.js" defer="defer"></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <form action="">
+      <label for="title"
+        >Book Title:
+        <input type="text" id="title" name="title" required/>
+        *
+      </label>
+      <label for="author"
+        >Author:
+        <input type="text" id="author" name="author" required/>
+        *
+      </label>
+      <label for="pages"
+        >Pages:
+        <input type="number" id="pages" name="pages" required/>
+        *
+      </label>
+      <label for="read"
+        >Check if read:
+        <input type="checkbox" id="read" name="read" />
+      </label>
+      <p id="required-reminder">* indicates a required field</p>
+      <button type="submit" id="submitBtn">Add Book</button>
+    </form>
+    <div id="libraryList">
+      <h3 id = "list-header">Books In Your Library</h3>
+    </div>
+  </body>
+</html>

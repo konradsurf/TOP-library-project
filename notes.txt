@@ -1,0 +1,50 @@
+NEXT SESSION
+[ ] create github repo and push it
+[ ] dynamic adjustment of column quantity
+	[ ] set widths/heights for each card to make this work? Maybe the clamp method? Or minmax?
+[ ] style form and button
+[ ] address how to get title to wrap if too long
+
+	
+
+
+
+STILL NEED
+[x] build out rest of form
+[x] have it feed title, author, pages and read? to the addBookToLibrary function
+[x] clear values from input boxes once book added
+[x] has been read checkbox doesn't seem to be passing through to new book object
+
+
+[x] add logic to clear out the current <p>'s/cards in the list when re-displaying books in displayBooks() function. 
+	- add class to all p's in the displayBooks function - DONE
+	- use query selector all to get nodelist - DONE
+	- foreach through nodelist 
+
+
+[x] add index to to all p's in the displayBooks function
+[x] change booklist <p>'s into divs - they should be the ones indexed.  
+[x] put title, author, etc in separate <p>'s nested in the div
+[x] style booklist <div>'s into cards (have it in separate elements, 	
+	[x] to grid place book info, add class in JS to each P element (author, title etc)
+	[x] then add p element to label each field (or maybe a label element?) - give it same class if label (author 		title etc), different class if a <p>element;
+	
+	
+[x] delete button to remove books - use the index "id" and delete all of it's child elements as well. 
+	-- removeBook() is working.  Just need event listener on each of those buttons. Perhaps one listener for all delete-btn class buttons, uses id of the button pushed to pass to removeBook()? 
+	[x] does event listener need to be "refreshed" every time we add/delete a card? - if so, put it in the display books function? 
+
+
+[x] button to change read status - To facilitate this you will want to create the function that toggles a book’s read 	status on your Book prototype instance.
+	[x] it's updating the object in the myLibrary array but not updating it in UI (even though the displayBooks() function is firing (and it seems to be recreating the divs and p's). --- SEEMS LIKE THE readStatus function is maintaining its state of "has been read" or "not read yet" even though Book.read[i] is updating.  -- wasn't using 'this' in front of the "read" property within the "readStatus" method (in the constructor). 
+
+
+[x] validation on submit so that new card with blank data or partial data is not created (make sure all boxes filled out before creating a new book record.
+[x] can I/ should I consolidate the displayBooks and displayBookInList functions? - nah, b/c displayBooks is for all Book objects, displayBookInList is for each individual Book instance.
+[x] dynamically change read button text/color when it's pressed and status changed? (does this make the read status line unnecessary? - probably not - b/c button would say "change it to read" or something like that) - not needed b/s status changes on the card
+[x] remove dummy records? - or keep?  Nope, nice to start user off with something
+
+TO CONSIDER LATER 
+
+ 
+
